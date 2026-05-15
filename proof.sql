@@ -10,8 +10,8 @@ VALUES (9999, (SELECT invoice_id FROM invoice LIMIT 1), 100.00, CURRENT_DATE);
 
 -- Error message Neon returned:
 -- ERROR: insert or update on table "payment_application" violates foreign key constraint "fk_app_payment" (SQLSTATE 23503)
--- PASTE ERROR HERE
--- PASTE ERROR HERE
+-- 
+-- 
 
 
 -- =====================================================================
@@ -22,8 +22,8 @@ VALUES (1, 1, -50.00, CURRENT_DATE);
 
 -- Error message Neon returned:
 -- ERROR: new row for relation "payment_application" violates check constraint "payment_application_amount_applied_check" (SQLSTATE 23514)
--- PASTE ERROR HERE
--- PASTE ERROR HERE
+-- 
+-- 
 
 
 -- =====================================================================
@@ -34,5 +34,5 @@ VALUES (1, CURRENT_DATE, 'Bitcoin', 500.00, 'BTC-TEST-001');
 
 -- Error message Neon returned:
 -- ERROR: new row for relation "payment" violates check constraint "payment_payment_method_check" (SQLSTATE 23514)
--- PASTE ERROR HERE
--- PASTE ERROR HERE
+-- 
+-- 
